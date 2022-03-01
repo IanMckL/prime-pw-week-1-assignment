@@ -1,11 +1,102 @@
-/* Give your page a fun background color */
+/* !!Give your page a fun background color */
 
-/* Make the header and footer a different color from the background */
+/* !!Make the header and footer a different color from the background */
 
-/* Align the h1 containing your name in the center of the header*/
+/* !! Align the h1 containing your name in the center of the header*/
 
-/* Make your p tag a different color and italic */
+/* !!Make your p tag a different color and italic */
 
-/* Put a border around your image */
+/* !!Put a border around your image */
 
-/* Change the font-family of your list */
+/* !!hange the font-family of your list */
+header{
+    margin: 10%,20%;
+    color:teal;
+    font-family: sans-serif;
+}
+
+body{
+  margin: 10%,20%;
+  background-color:rgb(131, 231, 210);
+  color:aliceblue;
+  text-align: center;
+  font-family: fantasy;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.main_block{
+    padding:40px ;
+    display:block;
+    background: #8b2c97; 
+    border-radius: 25px;
+}
+
+.parameter_image{
+    position:static;
+    display: inline-block;
+    margin: 5%;
+    border: #3ae67c;
+    border-width: 20px;
+    border-style:double;
+    animation: spinning 7s infinite linear;
+}
+    
+@keyframes spinning {    
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+} 
+
+   
+.twotruthsonelie{
+   font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+.twotruths:hover{
+    color: lightgreen;
+}
+
+.onelie:hover {
+    display: block;
+    color: red;
+}
+
+.hideemoji{
+    display: none;
+    visibility: hidden;
+    color: white;
+}
+
+.onelie:hover + .hideemoji {
+    display: block;
+    visibility: visible;
+    margin: -10%;
+    font-size: 100px;
+}
+
+.twotruths:hover + .hideemoji{
+    display: block;
+    visibility: visible;
+    margin: -10%;
+    font-size: 100px;
+}
+
+.quote{
+    font-style: italic;
+    color: fuchsia;
+}
+.hideemoji:hover{
+    display: none;
+    visibility: hidden;
+}
+
+img{
+    max-width:250px;
+}
